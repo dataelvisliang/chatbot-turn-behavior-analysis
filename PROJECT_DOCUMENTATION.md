@@ -817,6 +817,47 @@ Mean:   0.0025
 Median: 0.0000
 ```
 
+##### How Summary Classifications Are Computed
+
+**Improving / Stable / Worsening** - Based on `trend_slope` (linear regression of smoothed scores):
+
+```python
+# trend_slope = slope from: np.polyfit(turn_indices, smoothed_scores, 1)[0]
+
+if trend_slope > 0.01:
+    classification = "Improving"   # Sentiment trending upward
+elif trend_slope < -0.01:
+    classification = "Worsening"   # Sentiment trending downward
+else:
+    classification = "Stable"      # Slope between -0.01 and +0.01
+```
+
+**With Recovery** - Checks if any positive gradient (+1) occurs after any negative gradient (-1):
+
+```python
+# gradient_label: array of [+1, 0, -1] for each turn transition
+# +1 = improving (gradient > 0.05)
+#  0 = stable (-0.05 <= gradient <= 0.05)
+# -1 = worsening (gradient < -0.05)
+
+# Find first turn where sentiment dropped
+first_negative_turn = first index where gradient_label == -1
+
+# Check if ANY subsequent turn shows improvement
+recovery_detected = any(gradient_label[first_negative_turn:] == +1)
+```
+
+**Classification Thresholds:**
+
+| Metric | Threshold | Result |
+|--------|-----------|--------|
+| `trend_slope > 0.01` | Positive trend | Improving |
+| `-0.01 <= trend_slope <= 0.01` | Near-zero | Stable |
+| `trend_slope < -0.01` | Negative trend | Worsening |
+| `gradient_label == +1` after `-1` | Bounce back | With Recovery |
+
+**Why 0.01 threshold?** This creates a "dead zone" to avoid classifying minor fluctuations as trends. A slope of 0.005 over 3 turns is essentially flat.
+
 ---
 
 ## Project Structure

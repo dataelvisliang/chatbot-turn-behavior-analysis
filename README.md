@@ -127,6 +127,15 @@ Worsening (slope < 0):   108 (  5.4%)
 With recovery:             2 (  0.1%)
 ```
 
+### Classification Thresholds
+
+| Category | Condition | Description |
+|----------|-----------|-------------|
+| **Improving** | `trend_slope > 0.01` | Sentiment trending upward |
+| **Stable** | `-0.01 <= slope <= 0.01` | Minimal change (dead zone) |
+| **Worsening** | `trend_slope < -0.01` | Sentiment trending downward |
+| **With Recovery** | `+1` gradient after `-1` | Positive turn after a drop |
+
 ---
 
 ## Project Structure
