@@ -32,3 +32,6 @@ Thumbs.db
 
 # Hugging Face cache (don't commit models)
 .cache/
+
+# Project specific
+project_requirements.md
