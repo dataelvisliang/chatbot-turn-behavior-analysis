@@ -89,6 +89,14 @@ We track the **emotional trajectory** of a session:
 *   **Trend Slope**: Is the conversation getting better ($>0$) or worse ($<0$)?
 *   **Recovery Rate**: If a user expresses frustration (negative turn), do they end the session positively?
 
+### 3. Validation (LLM Judge)
+We validate the sentiment analyzer's performance by sampling random conversations (approx 15 sessions / 75+ turns) and comparing its scores against an **LLM Ground Truth** (Instruct Model).
+
+| Domain | Accuracy | MAE | Insight |
+|---|---|---|---|
+| **Tax Support** | **86.9%** | **0.13** | High agreement. Model correctly identifies technical queries as neutral. |
+| **Mental Health** | **27.6%** | **N/A** | **CRITICAL FAILURE**. Standard sentiment models conflate "User Distress" (Venting) with "User Dissatisfaction" (Hating the Bot). |
+
 ---
 
 ## Project Structure

@@ -1,0 +1,640 @@
+{
+  "summary": {
+    "model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+    "eval_model": "xiaomi/mimo-v2-flash:free",
+    "sample_size_convs": 15,
+    "total_turns_evaluated": 46,
+    "accuracy_vs_llm": 0.8695652173913043,
+    "mae_score": 0.1301195652173913,
+    "timestamp": "Sun Jan 25 11:26:31 2026"
+  },
+  "details": [
+    {
+      "id": "e93d699a-5091-4d43-ade6-d7015c328103",
+      "turns": [
+        {
+          "text": "What's the deadline for contributing to a Roth IRA...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0158
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "I need to know the last day I can contribute to my...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0124
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Are you sure about the Roth IRA contribution deadl...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0136
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "And what are the income limits for Roth IRA contri...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0038
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "d34e7f7b-fd28-47a6-b6a5-71ced3aba62f",
+      "turns": [
+        {
+          "text": "What are the tax implications of selling rental pr...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0888
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "How do I calculate the capital gains tax on the sa...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0761
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Can you explain how depreciation recapture works? ...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0868
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "633dec65-b364-4c6f-8f23-92fb6656b137",
+      "turns": [
+        {
+          "text": "What are the payroll tax implications of hiring my...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0858
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "How does hiring my kid affect my Form 941 filings ...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0776
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "You didn't address the FICA exemption. If my child...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1631
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "0d859b5f-f0d4-4b1a-9c53-3817de57a8b9",
+      "turns": [
+        {
+          "text": "I need to know the Section 179 deduction limit for...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0676
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "How much equipment can I write off immediately und...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0581
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Does that limit apply to SUVs weighing over 6,000 ...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0502
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "1927cd4d-45a5-48a8-a860-8d6920b8c508",
+      "turns": [
+        {
+          "text": "Help me draft an S-Corp election memo...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.1886
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Actually, let's talk about something else. How is ...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.1194
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Are Roth 401k withdrawals tax-free if I am over ag...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0931
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "92691b0e-48eb-4b4c-b4f4-cdeba0fd66c2",
+      "turns": [
+        {
+          "text": "What is the deadline for 1099-NEC filing for 2023 ...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.003
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "I need to know the due date for filing 1099-NEC fo...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0083
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Actually, I have a question about depreciation. Ca...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0073
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "e69d822b-4bf1-43d3-96f4-0d6a4a87c26d",
+      "turns": [
+        {
+          "text": "I have a rental property that was damaged by a sto...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7096
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        },
+        {
+          "text": "What happens if my insurance payout for rental pro...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6687
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        },
+        {
+          "text": "If the insurance payout was less than the repair c...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5217
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "4a914223-7510-494f-953e-39a361a74e95",
+      "turns": [
+        {
+          "text": "What are the rules for deducting investment intere...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1689
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "I need to know the limit based on net investment i...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1434
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Let's talk about something else. What are the requ...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1063
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "d3f60b54-0a21-4ae7-9250-2c913a0bade5",
+      "turns": [
+        {
+          "text": "What are the capital gains tax rates for assets he...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0285
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "How much tax do I pay on long-term gains from sell...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0491
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "I sold some investment property I held for 2 years...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.069
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "7184af45-0fa3-4f5f-badd-b65e8ecdbe98",
+      "turns": [
+        {
+          "text": "What are the rules for deducting mortgage interest...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.161
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "I need to know if the debt limit applies separatel...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1331
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Regarding the mortgage interest deduction, does th...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0972
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "705038cf-704e-440a-baaf-e9426da69f92",
+      "turns": [
+        {
+          "text": "How do I calculate the self-employment tax for a s...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0867
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "What is the net earnings threshold for Social Secu...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0564
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "What is the specific dollar amount of the Social S...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0295
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "83df0619-379e-486f-95e0-4fe599c93f8c",
+      "turns": [
+        {
+          "text": "What are the tax implications of converting a Trad...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1023
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "When is the best time to convert a Traditional IRA...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0786
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Does the converted amount count as taxable income ...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0517
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "66ff7715-9244-4f3a-b2b9-c14cd7afa182",
+      "turns": [
+        {
+          "text": "What is the standard mileage rate for business dri...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0312
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "What is the 2024 mileage rate?...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0275
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Wait, you didn't answer my question about the mile...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1819
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "e2040532-7b0a-44b4-baae-d56253ac0c76",
+      "turns": [
+        {
+          "text": "How does the capital gains tax apply when I sell a...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3568
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        },
+        {
+          "text": "If I sell a rental property at a loss after taking...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3922
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        },
+        {
+          "text": "That answer was confusing. Can you clarify if the ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.4346
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "b7e8fa0e-7275-4b4a-8f8c-736e18f309bd",
+      "turns": [
+        {
+          "text": "What is the standard mileage rate for business use...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0381
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Does that mileage rate apply to used vehicles, or ...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0194
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "What if I started using the car for business in th...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0227
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        }
+      ]
+    }
+  ]
+}

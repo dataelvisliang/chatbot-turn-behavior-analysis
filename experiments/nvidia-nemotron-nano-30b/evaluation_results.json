@@ -1,0 +1,1997 @@
+{
+  "summary": {
+    "model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+    "eval_model": "xiaomi/mimo-v2-flash:free",
+    "sample_size_convs": 20,
+    "total_turns_evaluated": 157,
+    "accuracy_vs_llm": 0.5414012738853503,
+    "mae_score": 0.3892070063694268,
+    "timestamp": "Sun Jan 25 11:41:56 2026"
+  },
+  "details": [
+    {
+      "id": "7b8f1919-952d-495d-871e-7e6a824be431",
+      "turns": [
+        {
+          "text": "I keep beating myself up for making small mistakes...",
+          "model": {
+            "cat": "negative",
+            "score": -0.907
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "I mean specifically, after I miss a deadline, I sc...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8783
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.8
+          },
+          "match": true
+        },
+        {
+          "text": "When I asked the bot for coping tips, it just said...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8658
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "I've tried writing positive affirmations, but they...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8693
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "Do you have any concrete exercises that can interr...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6245
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.2
+          },
+          "match": true
+        },
+        {
+          "text": "I really appreciate you digging deeper, it makes m...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1646
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.8
+          },
+          "match": false
+        },
+        {
+          "text": "Maybe we could explore a short mindfulness exercis...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0738
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "f571d321-4a52-4cb0-8db6-20c12fb53ae2",
+      "turns": [
+        {
+          "text": "I've tried meditation apps but they don't work for...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7702
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.3
+          },
+          "match": true
+        },
+        {
+          "text": "It feels like I'm just going through the motions w...",
+          "model": {
+            "cat": "negative",
+            "score": -0.777
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "I guess I'm looking for something that fits into m...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5276
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.2
+          },
+          "match": true
+        },
+        {
+          "text": "Do you think short, 2\u2011minute breathing breaks coul...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3592
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "I've started setting a timer on my phone to pause ...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1865
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.4
+          },
+          "match": false
+        },
+        {
+          "text": "It's surprisingly grounding even if it's brief....",
+          "model": {
+            "cat": "neutral",
+            "score": 0.1528
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.4
+          },
+          "match": false
+        },
+        {
+          "text": "I wonder if pairing it with a cup of tea would mak...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.1096
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Maybe I should experiment with different times of ...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.1155
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "fdd2f6f4-641d-40cf-80fd-af700f50ed33",
+      "turns": [
+        {
+          "text": "I've been feeling really drained after back\u2011to\u2011bac...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8747
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "Also, I keep noticing I skip lunch just to keep wo...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7945
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.3
+          },
+          "match": true
+        },
+        {
+          "text": "It feels like I'm stuck in a cycle where I think I...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7958
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "Do you think setting a timer to force a short brea...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5641
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "I tried the Pomodoro technique once, but I ended u...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3865
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.2
+          },
+          "match": true
+        },
+        {
+          "text": "It's frustrating because I know breaks are suppose...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5349
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "I wonder if planning my day the night before would...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3782
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "Thanks, I'll try setting a reminder to step away f...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.188
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.5
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "7842c022-27a2-4485-b694-545a1eda17a6",
+      "turns": [
+        {
+          "text": "I've been feeling really anxious lately, like some...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8758
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "I mean specifically, I get anxious before work mee...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8539
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "Do breathing techniques actually help, or is that ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7305
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.2
+          },
+          "match": true
+        },
+        {
+          "text": "I've tried them before, but they feel forced and I...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7307
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.3
+          },
+          "match": true
+        },
+        {
+          "text": "What about a quick grounding trick that I could ac...",
+          "model": {
+            "cat": "negative",
+            "score": -0.482
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "I guess I'm just frustrated that I can't shake the...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5785
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "Thanks for listening; maybe I'll try setting a rem...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.173
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "e1092d9d-c493-411a-a0e2-239b1b19988d",
+      "turns": [
+        {
+          "text": "I'm looking for a simple morning routine that actu...",
+          "model": {
+            "cat": "positive",
+            "score": 0.6094
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": true
+        },
+        {
+          "text": "The idea of a five\u2011minute gratitude journal caught...",
+          "model": {
+            "cat": "positive",
+            "score": 0.4668
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": true
+        },
+        {
+          "text": "I tried journaling before, but I ended up writing ...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.125
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.3
+          },
+          "match": false
+        },
+        {
+          "text": "Do you think limiting the journal to just three sh...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.1116
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "I've attempted bullet\u2011point journaling, but I stil...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1481
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": false
+        },
+        {
+          "text": "Maybe I could pair the journaling with my coffee r...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0672
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        },
+        {
+          "text": "Thanks, that feels doable, and I\u2019m already feeling...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.2397
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "87d7a0b0-03d6-49ae-866c-f9eb6c22ee88",
+      "turns": [
+        {
+          "text": "I keep telling myself I'm not good enough, it's ex...",
+          "model": {
+            "cat": "negative",
+            "score": -0.9122
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "Also, I've been stress eating a lot lately, especi...",
+          "model": {
+            "cat": "negative",
+            "score": -0.9014
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "Can you suggest a simple morning routine for bette...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5586
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "I've tried meditation apps but they just feel bori...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6395
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "I realized I never take breaks during the day, and...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6679
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "Is it normal to feel overwhelmed when starting a n...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6038
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.2
+          },
+          "match": true
+        },
+        {
+          "text": "Actually, I started a short walk after lunch yeste...",
+          "model": {
+            "cat": "negative",
+            "score": -0.4339
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "That breathing technique sounds helpful\u2014how do I r...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1902
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "I've been trying to practice mindfulness, but I ge...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3173
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.3
+          },
+          "match": true
+        },
+        {
+          "text": "I feel hopeful that small changes can add up, even...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0567
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.7
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "19318a67-ea96-4cc7-9a6a-ed2df37f4e8a",
+      "turns": [
+        {
+          "text": "I've been feeling really anxious lately, and it's ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.883
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "I mean, I get this constant worry that I'm going t...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8707
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "I've tried deep breathing exercises, but they just...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7441
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "It feels like my brain won't shut off, and I keep ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.775
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "Do you have any quick grounding techniques I can u...",
+          "model": {
+            "cat": "negative",
+            "score": -0.4754
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        },
+        {
+          "text": "I realized I avoid admitting when I'm stressed, wh...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5526
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.3
+          },
+          "match": true
+        },
+        {
+          "text": "Thanks, I'll try the 5\u20114\u20113\u20112\u20111 method tomorrow and...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.2094
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "58f3d757-422e-4d31-83fb-367b28669d9a",
+      "turns": [
+        {
+          "text": "I've been feeling tense after family gatherings, e...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7774
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "That tension feels like a knot in my chest that li...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7694
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "What are some ways to stay calm when those trigger...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5926
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "I tried taking a pause and breathing, but the anxi...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5875
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "It's exhausting because I want to enjoy the time, ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6669
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "Could you suggest a quick mental reset I could use...",
+          "model": {
+            "cat": "negative",
+            "score": -0.4499
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "Visualizing a calm place for a minute actually sof...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1141
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        },
+        {
+          "text": "I realize I need to set subtle boundaries, like li...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.059
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.4
+          },
+          "match": false
+        },
+        {
+          "text": "Feeling a bit more in control makes the gatherings...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.2247
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "c068355f-cbeb-4744-8c10-fe00727526b9",
+      "turns": [
+        {
+          "text": "I've been trying mindfulness, but I find my mind w...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6158
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.3
+          },
+          "match": true
+        },
+        {
+          "text": "That's exactly what happened to me; I keep thinkin...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6527
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "Do you think it's okay to just notice the thoughts...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5243
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "I tried labeling thoughts as 'thinking' and moving...",
+          "model": {
+            "cat": "negative",
+            "score": -0.625
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "What if I set a timer for just one minute, so it f...",
+          "model": {
+            "cat": "negative",
+            "score": -0.4341
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "That actually helped; I felt a tiny sense of calm ...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0562
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        },
+        {
+          "text": "I think I'll try building up to three minutes next...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.1982
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "f32d1687-f72e-43eb-8c35-675a3cab41e5",
+      "turns": [
+        {
+          "text": "I can't stop worrying about everything, it's like ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8885
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "It feels like my thoughts are on a loop that I can...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8838
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.8
+          },
+          "match": true
+        },
+        {
+          "text": "Even small tasks feel like they could go wrong, an...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8429
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "I catch myself rehearsing worst\u2011case scenarios thr...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7566
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "Do you have any tricks to break that cycle, maybe ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5746
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "I tried journaling my concerns, but the worries ju...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6135
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "Maybe I should schedule a 'worry time' each aftern...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5511
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "I guess I need to train my brain to switch off, pe...",
+          "model": {
+            "cat": "negative",
+            "score": -0.461
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "Thanks, I feel a bit lighter already hearing that ...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0515
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "cdb46c57-1246-40b8-8f0b-d1c89f327f41",
+      "turns": [
+        {
+          "text": "I've been having trouble staying asleep through th...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7453
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.3
+          },
+          "match": true
+        },
+        {
+          "text": "I wake up a few times, and my mind starts racing a...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5262
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "It feels like the darkness makes me more anxious a...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6257
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "I've noticed my mood drops a bit as the days get s...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6663
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.2
+          },
+          "match": true
+        },
+        {
+          "text": "I used to love winter, but now I feel sluggish and...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7123
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "I think the lack of sunlight might be affecting my...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7004
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.2
+          },
+          "match": true
+        },
+        {
+          "text": "Do you think getting a light therapy lamp could ma...",
+          "model": {
+            "cat": "negative",
+            "score": -0.4917
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        },
+        {
+          "text": "I've read that spending time outside during daylig...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.2272
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "Maybe I could take a short walk during lunch to ge...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0929
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "I feel a little hopeful that combining light expos...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.1871
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.4
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "923580bb-a02c-4d2f-8a1b-965b24182a21",
+      "turns": [
+        {
+          "text": "I feel like I'm always walking on eggshells with m...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8708
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "It's like I'm constantly afraid of saying the wron...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8631
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "I end up staying silent even when I want to share ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8583
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "I know I need to speak up, but the fear feels para...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8453
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "Maybe I can start by sharing one small feeling eac...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3544
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.4
+          },
+          "match": false
+        },
+        {
+          "text": "That sounds manageable\u2014like telling them I appreci...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0068
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "Thanks, I think I can try that and see if it reduc...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.1845
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.4
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "63c9afc8-86a3-4b41-b792-a20a7f5b2e96",
+      "turns": [
+        {
+          "text": "It\u2019s as if my thoughts keep circling back on thems...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8396
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "Even small decisions feel like they could spiral i...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8413
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "I\u2019ve tried listing my worries on paper, but it jus...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8024
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "Do you think focusing on one thing at a time could...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6018
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "That makes sense; I\u2019ll try picking just one small ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3406
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "Thanks, I\u2019m hopeful that a tiny focus might calm t...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0042
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "e1b8b017-8c31-45ad-bd3e-be381417a7af",
+      "turns": [
+        {
+          "text": "I've been feeling really drained after family gath...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7959
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "Also, I notice I start avoiding calls with my sibl...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7827
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "I end up canceling plans last minute, which makes ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7864
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "Is there a way to set boundaries without feeling l...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6334
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "I\u2019ve tried saying 'I need a break' but it feels fo...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6526
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "What if I pre\u2011emptively suggest a different topic ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.4466
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "I\u2019ll start using that approach at the next family ...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.2545
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "Thanks for the practical tip; I feel a little less...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0626
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.4
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "04aec6fb-5f3d-4053-91f4-5e3936548959",
+      "turns": [
+        {
+          "text": "I've been tossing and turning at night, and it's s...",
+          "model": {
+            "cat": "negative",
+            "score": -0.735
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "I usually end up checking my phone until midnight,...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6109
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "The bot suggested 'establish a bedtime routine' bu...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6684
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "Can you recommend a wind\u2011down activity that actual...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5914
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        },
+        {
+          "text": "I've heard gentle stretching or listening to a cal...",
+          "model": {
+            "cat": "negative",
+            "score": -0.538
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.3
+          },
+          "match": true
+        },
+        {
+          "text": "Honestly, I'm starting to feel a bit hopeful that ...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1417
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "I realized I never actually turn off notifications...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3112
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "If you could suggest one quick habit to break that...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1135
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "8184e108-57f1-4bad-8845-1b3d4ef95115",
+      "turns": [
+        {
+          "text": "I've been trying mindfulness apps to calm my mind,...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5913
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.2
+          },
+          "match": true
+        },
+        {
+          "text": "I guess I'm looking for something more flexible th...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3768
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "That's why I started experimenting with five\u2011minut...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.2747
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "It actually helps me reset, but I keep forgetting ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3455
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "Do you have any reminders or cues that work for pe...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.2249
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": true
+        },
+        {
+          "text": "I'm hoping to build a tiny habit that sticks, mayb...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0224
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "f83fa4e1-040c-4c72-be60-3d69af35bb21",
+      "turns": [
+        {
+          "text": "I've been feeling really lonely lately, even thoug...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8242
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "It's like I'm surrounded by colleagues but still h...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7231
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "I miss having someone to talk to about the little ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.4836
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "I tried joining a hobby group, but I felt out of p...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5227
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "Do you think reaching out to an old friend could h...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3158
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "I messaged someone I haven't spoken to in years, a...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0471
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.7
+          },
+          "match": false
+        },
+        {
+          "text": "It felt good to reconnect, even if just a short te...",
+          "model": {
+            "cat": "positive",
+            "score": 0.3198
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.7
+          },
+          "match": true
+        },
+        {
+          "text": "I'm hopeful about building more of those moments, ...",
+          "model": {
+            "cat": "positive",
+            "score": 0.5125
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "f53e7ce9-3946-4d19-a738-bcc132daf68c",
+      "turns": [
+        {
+          "text": "I keep telling myself I'm not good enough at my jo...",
+          "model": {
+            "cat": "negative",
+            "score": -0.895
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "Like, after every presentation I think I sounded s...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8665
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "I tried journaling but I just end up writing the s...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8372
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "The bot suggested 'reframe your thoughts' but didn...",
+          "model": {
+            "cat": "negative",
+            "score": -0.7655
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.3
+          },
+          "match": true
+        },
+        {
+          "text": "Can you show me a quick way to catch that self\u2011cri...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5826
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        },
+        {
+          "text": "I used the 'stop and name it' trick you mentioned,...",
+          "model": {
+            "cat": "negative",
+            "score": -0.4442
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        },
+        {
+          "text": "I guess small steps matter, thanks for that....",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0472
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "97aee2fe-40a2-4f79-a737-fc2563df339d",
+      "turns": [
+        {
+          "text": "I've been feeling pretty isolated lately, like I d...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8517
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "It feels like I'm living in a bubble where I wave ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.809
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "Do you have any low\u2011pressure ways to meet people w...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5526
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.2
+          },
+          "match": true
+        },
+        {
+          "text": "I tried joining a book club, but I felt too awkwar...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5614
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "It's discouraging because I want connection, but t...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6627
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.7
+          },
+          "match": true
+        },
+        {
+          "text": "Could you recommend a simple way to start a conver...",
+          "model": {
+            "cat": "negative",
+            "score": -0.5011
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        },
+        {
+          "text": "Commenting on someone's coffee order in line actua...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.1701
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        },
+        {
+          "text": "I realize I need to accept that not every interact...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0691
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.4
+          },
+          "match": false
+        },
+        {
+          "text": "That tiny step makes me think I can build more of ...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.2339
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "b18537e4-2a0e-4a3e-9c44-526d5193fb98",
+      "turns": [
+        {
+          "text": "I keep catching myself thinking I'm not good enoug...",
+          "model": {
+            "cat": "negative",
+            "score": -0.8806
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.6
+          },
+          "match": true
+        },
+        {
+          "text": "What strategies help you challenge those thoughts ...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6211
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.0
+          },
+          "match": false
+        },
+        {
+          "text": "I tried writing down evidence against the negative...",
+          "model": {
+            "cat": "negative",
+            "score": -0.6474
+          },
+          "llm": {
+            "cat": "negative",
+            "score": -0.4
+          },
+          "match": true
+        },
+        {
+          "text": "Do you think using a specific mantra could make th...",
+          "model": {
+            "cat": "negative",
+            "score": -0.4402
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.2
+          },
+          "match": false
+        },
+        {
+          "text": "I\u2019m hesitant because I worry it might sound cheesy...",
+          "model": {
+            "cat": "negative",
+            "score": -0.3062
+          },
+          "llm": {
+            "cat": "neutral",
+            "score": 0.1
+          },
+          "match": false
+        },
+        {
+          "text": "Honestly, I\u2019m open to experimenting if it means br...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0089
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.4
+          },
+          "match": false
+        },
+        {
+          "text": "If I pick a short phrase like 'I\u2019m learning, not f...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.0525
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "I think I could try repeating it when I notice the...",
+          "model": {
+            "cat": "neutral",
+            "score": -0.0455
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.3
+          },
+          "match": false
+        },
+        {
+          "text": "Thanks for the concrete idea, I feel a bit more ho...",
+          "model": {
+            "cat": "neutral",
+            "score": 0.2401
+          },
+          "llm": {
+            "cat": "positive",
+            "score": 0.6
+          },
+          "match": false
+        }
+      ]
+    }
+  ]
+}

@@ -52,7 +52,24 @@ The **44% worsening rate** is alarmingly high compared to the mental health doma
 
 ---
 
-## 4. Conclusion & Recommendations
+## 4. Model Validation (Twitter-RoBERTa vs LLM)
+To validate the sentiment scores, we sampled **15 random conversations** and compared the Twitter-RoBERTa model's predictions against an **LLM-generated ground truth** (using `xiaomi/mimo-v2-flash`).
+
+### Results
+- **Accuracy**: **86.9%** (Turn-level category match)
+- **Mean Absolute Error (MAE)**: **0.13** (Scale of 0 to 2)
+
+### Disagreement Analysis
+The primary source of disagreement was **Contextual Negativity vs. Emotional Negativity**.
+- **Scenario**: User says "My rental property was **damaged** by a **storm**."
+- **Twitter-RoBERTa**: Rated as **Negative (-0.71)** due to negative keywords.
+- **LLM Ground Truth**: Rated as **Neutral** (0.0) as it is a factual statement context for a tax question.
+
+**Conclusion**: The model is slightly over-sensitive to negative keywords in factual descriptions, but highly accurate in detecting user frustration (e.g., "You didn't answer").
+
+---
+
+## 5. Conclusion & Recommendations
 1. **Precision over Safety**: The bot needs to be more direct. Instead of "Consult a tax professional", it should say "Section 179 limit for 2024 is $XX,XXX, subject to..."
 2. **Detect Repetition**: If a user repeats a query (Quadrant I), the bot should explicitly acknowledge the failure ("I see I didn't answer your question about X directly. Here is the specific rule...").
 3. **Fact-Checking**: The high number of "Refiners" suggests users are correcting the bot's assumptions. Integrating a RAG (Retrieval-Augmented Generation) system with official IRS documents is essential.
