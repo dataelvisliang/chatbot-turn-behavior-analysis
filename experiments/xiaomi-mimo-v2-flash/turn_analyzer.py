@@ -15,6 +15,7 @@ Classifies user behavior into quadrants (using median-based thresholds):
 import json
 import os
 import numpy as np
+from pathlib import Path
 from typing import List, Dict, Tuple
 from dotenv import load_dotenv
 import torch
@@ -23,6 +24,9 @@ import Levenshtein
 
 # Load environment variables
 load_dotenv()
+
+# Get script directory for file paths
+SCRIPT_DIR = Path(__file__).resolve().parent
 
 # Configuration
 RERANKER_MODEL = "BAAI/bge-reranker-v2-m3"
@@ -259,8 +263,9 @@ class TurnAnalyzer:
 
 
 def main():
-    input_file = "dummy_conversations.json"
-    output_file = "turn_analysis_results.json"
+    # Use script directory for file paths
+    input_file = str(SCRIPT_DIR / "dummy_conversations.json")
+    output_file = str(SCRIPT_DIR / "turn_analysis_results.json")
     
     print(f"Loading conversations from {input_file}...")
     

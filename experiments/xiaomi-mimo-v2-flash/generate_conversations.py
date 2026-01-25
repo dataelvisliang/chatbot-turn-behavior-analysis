@@ -5,18 +5,25 @@ import uuid
 import random
 import requests
 from dotenv import load_dotenv
+from pathlib import Path
 
-# Load environment variables from .env file
-load_dotenv()
+# Load environment variables from project root .env
+env_path = Path(__file__).resolve().parent.parent.parent / '.env'
+if env_path.exists():
+    load_dotenv(env_path)
+    print(f"Loaded .env from: {env_path}")
+else:
+    load_dotenv()  # Fallback to current dir
 
 # OpenRouter API configuration
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
-MODEL = os.environ.get("OPENROUTER_MODEL", "nvidia/nemotron-3-nano-30b-a3b:free")
+# Hardcode model for this experiment
+MODEL = "xiaomi/mimo-v2-flash:free"
 
 # Generation settings
 BATCH_SIZE = 15  # Number of conversations per API call
-NUM_CONVERSATIONS = int(os.environ.get("NUM_CONVERSATIONS", "500"))
+NUM_CONVERSATIONS = int(os.environ.get("NUM_CONVERSATIONS", "2000"))
 
 def generate_conversations_batch(batch_size: int = 15) -> list[dict]:
     """
@@ -222,7 +229,9 @@ def generate_dummy_conversations(num_conversations: int = 500, batch_size: int =
     return all_conversations
 
 if __name__ == "__main__":
-    output_file = "dummy_conversations.json"
+    # Save output to the same directory as this script
+    script_dir = Path(__file__).resolve().parent
+    output_file = str(script_dir / "dummy_conversations.json")
     
     # Generate conversations using configured settings
     data = generate_dummy_conversations(

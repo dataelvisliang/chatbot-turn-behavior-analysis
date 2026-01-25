@@ -2,21 +2,26 @@
 Task 3: Sentiment Gradient Analysis
 
 Analyzes sentiment progression across conversation turns:
-- Assigns sentiment score to each user turn (0-100 scale)
+- Assigns sentiment score to each user turn (-1 to +1 scale)
 - Computes sentiment gradient (delta between consecutive turns)
 - Classifies gradient direction: +1 (improving), 0 (stable), -1 (worsening)
 - Extracts session-level features: trend slope, max drop, recovery flag
 
-Uses: distilbert-base-uncased-finetuned-sst-2-english for sentiment analysis
+Uses: cardiffnlp/twitter-roberta-base-sentiment-latest for sentiment analysis
+Model: cardiffnlp/twitter-roberta-base-sentiment-latest (3-class: negative, neutral, positive)
 """
 
 import json
 import numpy as np
+from pathlib import Path
 from typing import List, Dict, Optional
 from transformers import pipeline
 import torch
 import warnings
 warnings.filterwarnings('ignore')
+
+# Get script directory for file paths
+SCRIPT_DIR = Path(__file__).resolve().parent
 
 
 class SentimentGradientAnalyzer:
@@ -38,28 +43,29 @@ class SentimentGradientAnalyzer:
         
         self.sentiment_analyzer = pipeline(
             "sentiment-analysis",
-            model="distilbert-base-uncased-finetuned-sst-2-english",
-            device=device
+            model="cardiffnlp/twitter-roberta-base-sentiment-latest",
+            device=device,
+            top_k=None
         )
         print("Model loaded successfully!")
     
     def get_sentiment_score(self, text: str) -> float:
         """
         Convert sentiment to continuous score (-1 to +1).
-        POSITIVE high score -> positive value
-        NEGATIVE high score -> negative value
+        Score = Probability(Positive) - Probability(Negative)
         """
         # Truncate very long texts (model max is 512 tokens)
         text = text[:512]
         
-        result = self.sentiment_analyzer(text)[0]
+        # Get all scores (top_k=None returns list of dicts for all labels)
+        results = self.sentiment_analyzer(text)[0]
         
-        if result['label'] == 'POSITIVE':
-            # score 0.5-1.0 maps to 0 to 1
-            return 2 * result['score'] - 1
-        else:  # NEGATIVE
-            # score 0.5-1.0 maps to -1 to 0
-            return -(2 * result['score'] - 1)
+        # Parse scores
+        scores = {res['label']: res['score'] for res in results}
+        
+        # Calculate composite score from probabilities
+        # Range: -1 (100% neg) to +1 (100% pos), with 0 being neutral/ambiguous
+        return scores.get('positive', 0) - scores.get('negative', 0)
     
     def score_to_100_scale(self, score: float) -> float:
         """Convert -1 to +1 score to 0-100 scale."""
@@ -304,8 +310,9 @@ class SentimentGradientAnalyzer:
 
 
 def main():
-    input_file = "dummy_conversations.json"
-    output_file = "sentiment_analysis_results.json"
+    # Use script directory for file paths
+    input_file = str(SCRIPT_DIR / "dummy_conversations.json")
+    output_file = str(SCRIPT_DIR / "sentiment_analysis_results.json")
     
     print(f"Loading conversations from {input_file}...")
     
