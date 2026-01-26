@@ -55,6 +55,17 @@ The **44% worsening rate** is alarmingly high compared to the mental health doma
 ## 4. Model Validation (Twitter-RoBERTa vs LLM)
 To validate the sentiment scores, we sampled **15 random conversations** and compared the Twitter-RoBERTa model's predictions against an **LLM-generated ground truth** (using `xiaomi/mimo-v2-flash`).
 
+### Validation Prompt
+```text
+Analyze the sentiment of this text from a Tax/Accounting conversation.
+Text: "{text}"
+Determine:
+1. Sentiment Score (-1.0 to +1.0)
+   -1.0 = Highly Negative (Frustrated, Angry, Confused/Stuck)
+   0.0 = Neutral (Question, Clarification, Professional)
+   +1.0 = Highly Positive (Thanks, Understanding, Resolved)
+```
+
 ### Results
 - **Accuracy**: **86.9%** (Turn-level category match)
 - **Mean Absolute Error (MAE)**: **0.13** (Scale of 0 to 2)

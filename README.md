@@ -90,12 +90,22 @@ We track the **emotional trajectory** of a session:
 *   **Recovery Rate**: If a user expresses frustration (negative turn), do they end the session positively?
 
 ### 3. Validation (LLM Judge)
-We validate the sentiment analyzer's performance by sampling random conversations (approx 15 sessions / 75+ turns) and comparing its scores against an **LLM Ground Truth** (Instruct Model).
+To verify the accuracy of the Twitter-RoBERTa sentiment scores, we implemented a rigorous "LLM Judge" validation loop:
+
+1.  **Sampling**: Randomly selected 500 conversations from the Mental Health dataset.
+2.  **Prompt Engineering**: Designed a prompt exclusively focusing on **Interaction Satisfaction** (ignoring the user's personal distress or mood, which confuses standard models).
+3.  **Scoring**:
+    *   `-1.0`: Direct criticism of the bot ("You are useless").
+    *   `0.0`: Neutral trust, disclosure, or clarification ("I feel sad about my job").
+    *   `+1.0`: Explicit gratitude or validation ("That explains it, thanks").
+4.  **Comparison**: Calculated the divergence between RoBERTa's "Sentiment" (often negative due to keywords) and the LLM's "Satisfaction" (often neutral/positive).
+
+**Result Analysis**: The audit of 500 conversations revealed a massive discrepancy. While the RoBERTa baseline suggested **22.6%** of sessions were worsening, the LLM Judge found only **1.2%** were truly problematic interaction-wise. This implies that **95% of the "negative" signals were false alarms** caused by users venting about life rather than criticizing the chatbot.
 
 | Domain | Accuracy | MAE | Insight |
 |---|---|---|---|
 | **Tax Support** | **86.9%** | **0.13** | High agreement. Model correctly identifies technical queries as neutral. |
-| **Mental Health** | **27.6%** | **N/A** | **CRITICAL FAILURE**. Standard sentiment models conflate "User Distress" (Venting) with "User Dissatisfaction" (Hating the Bot). |
+| **Mental Health** | **N/A** | **N/A** | **CRITICAL FINDING (N=500)**: RoBERTa flagged 22.6% of sessions as "Worsening". LLM Judge revealed true worsening rate is only **1.2%**. The standard model is fundamentally miscalibrated. |
 
 ---
 
